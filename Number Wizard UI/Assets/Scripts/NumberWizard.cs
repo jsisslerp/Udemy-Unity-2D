@@ -7,31 +7,37 @@ public class NumberWizard : MonoBehaviour
 {
     [SerializeField] private int min;
     [SerializeField] private int max;
+    [SerializeField] private bool random;
     [SerializeField] TextMeshProUGUI guessText;
     private int guess;
 
     private void proposeGuess()
     {
-        guess = (min + max) / 2;
+        if (random)
+        {
+            guess = Random.Range(min, max + 1);
+        }
+        else
+        {
+            guess = (min + max) / 2;
+        }
         guessText.SetText(guess.ToString());
     }
 
     public void Start()
     {
-        guess = (min + max) / 2;
-        max = max + 1;
-        guessText.SetText(guess.ToString());
+        proposeGuess();
     }
 
     public void OnPressHigher()
     {
-        min = guess;
+        min = guess + 1;
         proposeGuess();
     }
 
     public void OnPressLower()
     {
-        max = guess;
+        max = guess - 1;
         proposeGuess();
     }
 }
