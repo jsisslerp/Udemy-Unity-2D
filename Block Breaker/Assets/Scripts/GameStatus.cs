@@ -9,13 +9,27 @@ public class GameStatus : MonoBehaviour {
     [SerializeField] private int currentScore = 0;
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    private void Awake()
+    {
+        if (FindObjectsOfType<GameStatus>().Length > 1)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {
         scoreText.text = currentScore.ToString();
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
         Time.timeScale = gameSpeed;
 	}
 
@@ -23,5 +37,10 @@ public class GameStatus : MonoBehaviour {
     {
         currentScore += pointsPerBlockDestroyed;
         scoreText.text = currentScore.ToString();
+    }
+
+    public void ResetGame()
+    {
+        Destroy(gameObject);
     }
 }
