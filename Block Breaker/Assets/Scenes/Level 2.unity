@@ -417,6 +417,11 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224863911193445086, guid: 9af40da0949b90744acf3efa6bef9daf,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af40da0949b90744acf3efa6bef9daf, type: 2}
   m_IsPrefabAsset: 0
@@ -462,6 +467,57 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 245cbd723ee33c74bbc54d395b41d624, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &741516713
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1925516993}
+    m_Modifications:
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327434012606642, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_Name
+      value: Unbreakable Pyramid (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cad7b335963e788449b29330a824053b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &741516714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b,
+    type: 2}
+  m_PrefabInternal: {fileID: 741516713}
 --- !u!1001 &781961590
 Prefab:
   m_ObjectHideFlags: 0
@@ -941,7 +997,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.0000005
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
       propertyPath: m_LocalPosition.z
@@ -965,7 +1021,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1327434012606642, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
       propertyPath: m_Name
@@ -1200,6 +1256,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41,
     type: 2}
   m_PrefabInternal: {fileID: 1254082632}
+--- !u!1001 &1284659064
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1925516993}
+    m_Modifications:
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327434012606642, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_Name
+      value: Unbreakable Pyramid (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cad7b335963e788449b29330a824053b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1284659065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1284659064}
 --- !u!1001 &1354991566
 Prefab:
   m_ObjectHideFlags: 0
@@ -1292,7 +1399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9482fc7629d504db848430c6be7f41, type: 2}
@@ -1339,7 +1446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4432176145176328, guid: 680e7d7c9d6c8a248a78bb67b5b1be52, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114551845801239622, guid: 680e7d7c9d6c8a248a78bb67b5b1be52,
         type: 2}
@@ -1525,7 +1632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737714140}
   m_Layer: 0
-  m_Name: Pyramids
+  m_Name: Breakable Pyramids
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,16 +1645,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737714139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.421002, y: 3.7549481, z: -0.08203125}
+  m_LocalPosition: {x: 8.2, y: 5.71, z: -0.08203125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1418494860}
   - {fileID: 1002497670}
   - {fileID: 882932661}
   - {fileID: 18432804}
   - {fileID: 207166700}
   - {fileID: 158535888}
-  - {fileID: 1027236521}
   - {fileID: 807385978}
   - {fileID: 1446671033}
   - {fileID: 1254082633}
@@ -1566,9 +1671,62 @@ Transform:
   - {fileID: 1962617610}
   - {fileID: 982008866}
   - {fileID: 1354991567}
+  - {fileID: 1418494860}
+  - {fileID: 1027236521}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1756784480
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1925516993}
+    m_Modifications:
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327434012606642, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_Name
+      value: Unbreakable Pyramid (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cad7b335963e788449b29330a824053b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1756784481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1756784480}
 --- !u!1001 &1787345175
 Prefab:
   m_ObjectHideFlags: 0
@@ -1624,6 +1782,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: 3f9482fc7629d504db848430c6be7f41,
     type: 2}
   m_PrefabInternal: {fileID: 1787345175}
+--- !u!1001 &1866267448
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1925516993}
+    m_Modifications:
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cad7b335963e788449b29330a824053b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1866267449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4127482645254218, guid: cad7b335963e788449b29330a824053b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1866267448}
+--- !u!1 &1925516992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1925516993}
+  m_Layer: 0
+  m_Name: Unbreakable Pyramids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1925516993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925516992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.47314, y: 7.5522714, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 741516714}
+  - {fileID: 1756784481}
+  - {fileID: 1866267449}
+  - {fileID: 1284659065}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1932126462
 Prefab:
   m_ObjectHideFlags: 0

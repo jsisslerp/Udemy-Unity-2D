@@ -216,7 +216,7 @@ Prefab:
     - target: {fileID: 114551845801239622, guid: 680e7d7c9d6c8a248a78bb67b5b1be52,
         type: 2}
       propertyPath: levelThreshold
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680e7d7c9d6c8a248a78bb67b5b1be52, type: 2}
@@ -576,6 +576,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114258628762780648, guid: 9af40da0949b90744acf3efa6bef9daf,
+        type: 2}
+      propertyPath: gameSpeed
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af40da0949b90744acf3efa6bef9daf, type: 2}
   m_IsPrefabAsset: 0
@@ -864,7 +869,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011871259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.849565, y: 6.158291, z: -9.958984}
+  m_LocalPosition: {x: 8.95, y: 7.49, z: -9.958984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1873388244}
@@ -1488,6 +1493,11 @@ Prefab:
         type: 2}
       propertyPath: yPush
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114085478790472044, guid: 5404e915e0dcbc44e909494385f96729,
+        type: 2}
+      propertyPath: randomFactor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5404e915e0dcbc44e909494385f96729, type: 2}

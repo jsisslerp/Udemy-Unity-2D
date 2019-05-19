@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 60503259622388580}
   - component: {fileID: 114571369214452744}
   m_Layer: 0
-  m_Name: Pyramid
-  m_TagString: Untagged
+  m_Name: Unbreakable Pyramid
+  m_TagString: Unbreakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: 0361d1335afde08499c01a4e6d96b7d3, type: 3}
+  pyramidSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
 --- !u!212 &212094095936881832
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -120,7 +121,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 50ebe0196c6d4d6458591e5fa28db0e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54509807, g: 0.27058825, b: 0.07450981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
