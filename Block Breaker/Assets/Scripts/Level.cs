@@ -9,7 +9,8 @@ public class Level : MonoBehaviour {
     [SerializeField] int levelThreshold = 0;
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    { 
         if (blockContainer.transform.childCount <= levelThreshold)
         {
             sceneLoader.LoadNextScene();

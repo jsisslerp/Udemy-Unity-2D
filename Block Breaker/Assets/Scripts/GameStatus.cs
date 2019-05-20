@@ -8,6 +8,15 @@ public class GameStatus : MonoBehaviour {
     [SerializeField] private int pointsPerBlockDestroyed = 83;
     [SerializeField] private int currentScore = 0;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private bool autoPlay = false;
+
+    public bool AutoPlay
+    {
+        get
+        {
+            return autoPlay;
+        }
+    }
 
     private void Awake()
     {

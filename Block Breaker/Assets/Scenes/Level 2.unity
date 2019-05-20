@@ -422,6 +422,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114258628762780648, guid: 9af40da0949b90744acf3efa6bef9daf,
+        type: 2}
+      propertyPath: autoPlay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af40da0949b90744acf3efa6bef9daf, type: 2}
   m_IsPrefabAsset: 0
@@ -1461,7 +1466,7 @@ Prefab:
     - target: {fileID: 114551845801239622, guid: 680e7d7c9d6c8a248a78bb67b5b1be52,
         type: 2}
       propertyPath: levelThreshold
-      value: 22
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680e7d7c9d6c8a248a78bb67b5b1be52, type: 2}
@@ -1669,9 +1674,9 @@ Transform:
   - {fileID: 2076504956}
   - {fileID: 930480045}
   - {fileID: 1962617610}
+  - {fileID: 1418494860}
   - {fileID: 982008866}
   - {fileID: 1354991567}
-  - {fileID: 1418494860}
   - {fileID: 1027236521}
   m_Father: {fileID: 0}
   m_RootOrder: 5
