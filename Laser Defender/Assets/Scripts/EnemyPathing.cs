@@ -3,15 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour {
-    [SerializeField] WaveConfig waveConfig;
+    private WaveConfig waveConfig;
     private List<Transform> waypoints;
-    private float moveSpeed = 2f;
     private int waypointIndex = 0;
 
-	// Use this for initialization
-	void Start () {
+    public WaveConfig WaveConfig
+    {
+        get
+        {
+            return waveConfig;
+        }
+
+        set
+        {
+            waveConfig = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         waypoints = waveConfig.GetWayPoints();
-        moveSpeed = waveConfig.MoveSpeed;
         transform.position = waypoints[waypointIndex].position;
 	}
 	
@@ -32,7 +43,7 @@ public class EnemyPathing : MonoBehaviour {
         }
         else
         {
-            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].position, moveSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointIndex].position, waveConfig.MoveSpeed * Time.deltaTime);
         }
     }
 }
