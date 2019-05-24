@@ -115,6 +115,9 @@ MonoBehaviour:
   projectileFiringPeriod: 0.1
   explosionVFX: {fileID: 1089640778822776, guid: 6c29337f0b12b6a4e91e9952acba3ede,
     type: 2}
+  durationOfExplosion: 1
+  deathSound: {fileID: 8300000, guid: a703a16997f520844a90c19e685350be, type: 3}
+  deathSoundVolume: 1.5
 --- !u!212 &212357250920055786
 SpriteRenderer:
   m_ObjectHideFlags: 1
