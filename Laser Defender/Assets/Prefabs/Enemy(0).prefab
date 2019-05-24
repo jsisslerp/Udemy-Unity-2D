@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114026321055815332}
   - component: {fileID: 114499846846278374}
   - component: {fileID: 60927608131394110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy(0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,10 +107,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   shotCounter: 0
-  minTimeBetweenShots: 0.2
+  minTimeBetweenShots: 0.5
   maxTimeBetweenShots: 1
   enemyLaser: {fileID: 1209531862902220, guid: f90a5c5cbca82044491e5ee1c66f4b51, type: 2}
-  projectileSpeed: 15
+  projectileSpeed: 5
+  explosionVFX: {fileID: 1089640778822776, guid: 6c29337f0b12b6a4e91e9952acba3ede,
+    type: 2}
+  durationOfExplosion: 1
 --- !u!212 &212314719648924964
 SpriteRenderer:
   m_ObjectHideFlags: 1

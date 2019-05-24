@@ -4,11 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    [Header("Player")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float padding = 1f;
+    [SerializeField] private int health = 200;
+
+    [Header("Projectile")]
     [SerializeField] private GameObject playerLaser;
     [SerializeField] private float projectileSpeed = 10f;
     [SerializeField] private float projectileFiringPeriod = 0.1f;
+
+    [SerializeField] private GameObject explosionVFX;
+    [SerializeField] private float durationOfExplosion = 1f;
 
     Coroutine firingCoroutine;
 
@@ -69,5 +76,31 @@ public class Player : MonoBehaviour {
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+        if (damageDealer)
+        {
+            ProcessHit(damageDealer);
+        }
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.Damage;
+        damageDealer.Hit();
+        if (health <= 0)
+        {
+            TriggerExplosionVFX();
+            Destroy(gameObject);
+        }
+    }
+
+    private void TriggerExplosionVFX()
+    {
+        GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
+        Destroy(explosion, durationOfExplosion);
     }
 }
