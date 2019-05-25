@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 114499846846278374}
   - component: {fileID: 60927608131394110}
   - component: {fileID: 82858288624258710}
+  - component: {fileID: 50907314598867828}
+  - component: {fileID: 114497457102305770}
   m_Layer: 9
   m_Name: Enemy(0)
   m_TagString: Untagged
@@ -44,6 +46,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50907314598867828
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814001705374420}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60927608131394110
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -53,7 +75,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -190,6 +212,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c063ec3b6e20f449f800ba77e58ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114497457102305770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814001705374420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd96192b9ba2d6f4496e0ffb2d42c317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!114 &114499846846278374
 MonoBehaviour:
   m_ObjectHideFlags: 1

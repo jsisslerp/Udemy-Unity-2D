@@ -96,6 +96,7 @@ public class Player : MonoBehaviour {
         damageDealer.Hit();
         if (health <= 0)
         {
+            FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
             TriggerExplosionVFX();
             AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
