@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSession : MonoBehaviour {
+public class GameSession : PersistentGameObjectSingleton<GameSession>
+{
     private int score = 0;
 
     public int Score
@@ -22,19 +23,4 @@ public class GameSession : MonoBehaviour {
     {
         Destroy(gameObject);
     }
-
-    private void Awake()
-    {
-        if (FindObjectsOfType(GetType()).Length > 1)
-        {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
-
 }
