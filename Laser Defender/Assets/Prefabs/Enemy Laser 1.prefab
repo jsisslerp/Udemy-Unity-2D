@@ -21,10 +21,12 @@ GameObject:
   - component: {fileID: 4136981638404892}
   - component: {fileID: 212209098987748140}
   - component: {fileID: 50092896584099452}
-  - component: {fileID: 70173755432256452}
   - component: {fileID: 114365804765388916}
+  - component: {fileID: 58953833619686192}
+  - component: {fileID: 114540128920981834}
+  - component: {fileID: 114437734108771200}
   m_Layer: 11
-  m_Name: Enemy Laser
+  m_Name: Enemy Laser 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1209531862902220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.031, y: -0.875, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,8 +65,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &70173755432256452
-CapsuleCollider2D:
+--- !u!58 &58953833619686192
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,9 +77,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.09, y: 0.37}
-  m_Direction: 0
+  m_Offset: {x: 0.0031022877, y: -0.0077558756}
+  serializedVersion: 2
+  m_Radius: 0.1453789
 --- !u!114 &114365804765388916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,7 +91,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd96192b9ba2d6f4496e0ffb2d42c317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 200
+--- !u!114 &114437734108771200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209531862902220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0581900c1c504f74d8c2ce42eaf956b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedOfSpin: 360
+--- !u!114 &114540128920981834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209531862902220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b620d1c729e605c4181e402cd59a60d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212209098987748140
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -125,7 +150,7 @@ SpriteRenderer:
   m_SortingLayerID: 1090559041
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 651841e80fd938246a73ee5343a75c6f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1142954cf9a4f044caacaa49382e1250, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

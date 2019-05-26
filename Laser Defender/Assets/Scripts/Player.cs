@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player : PersistentGameObjectSingleton<Player>
+{
     [Header("Player")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float padding = 1f;
-    [SerializeField] private int health = 200;
+    [SerializeField] private int health = 1000;
 
     [Header("Projectile")]
     [SerializeField] private GameObject playerLaser;
@@ -27,10 +28,18 @@ public class Player : MonoBehaviour {
     private float yMin;
     private float yMax;
 
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+    }
+
     // Use this for initialization
     void Start () {
         SetupMoveBoundaries();
-	}
+    }
 
     // Update is called once per frame
     void Update () {

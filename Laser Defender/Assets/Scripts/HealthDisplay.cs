@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreDisplay : MonoBehaviour {
-    private Text scoreText;
+public class HealthDisplay : MonoBehaviour {
+    private Text healthText;
 
 	// Use this for initialization
 	void Start () {
-        scoreText = GetComponent<Text>();
+        healthText = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        scoreText.text = GameSession.Instance.Score.ToString();
+        healthText.text = Player.Instance.Health.ToString();
 	}
 }

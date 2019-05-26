@@ -20,7 +20,10 @@ public class DamageDealer : MonoBehaviour {
 
     public void Hit()
     {
-        Destroy(gameObject);
+        if (FindObjectOfType<Player>().GetComponent<DamageDealer>() != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Use this for initialization

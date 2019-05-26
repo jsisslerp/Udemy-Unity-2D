@@ -12,11 +12,11 @@ public class GameSession : PersistentGameObjectSingleton<GameSession>
         {
             return score;
         }
-    }
 
-    public void AddToScore(int addition)
-    {
-        score += addition;
+        set
+        {
+            score = value;
+        }
     }
 
     public void ResetGame()

@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour {
 
     private void Die()
     {
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
+        GameSession.Instance.Score += scoreValue;
         Destroy(gameObject);
         TriggerExplosionVFX();
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
