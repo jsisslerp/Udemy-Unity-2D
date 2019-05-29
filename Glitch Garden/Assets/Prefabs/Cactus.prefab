@@ -38,6 +38,9 @@ GameObject:
   - component: {fileID: 95044206558630224}
   - component: {fileID: 212686850891855522}
   - component: {fileID: 114497439992392758}
+  - component: {fileID: 114619436382989666}
+  - component: {fileID: 50842603598022610}
+  - component: {fileID: 70638300204191646}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -72,6 +75,41 @@ Transform:
   m_Father: {fileID: 4719066363794612}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50842603598022610
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785324572622308}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &70638300204191646
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785324572622308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.027772546, y: -0.061716914}
+  m_Size: {x: 0.4776137, y: 1.0022056}
+  m_Direction: 0
 --- !u!95 &95044206558630224
 Animator:
   serializedVersion: 3
@@ -114,6 +152,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1974144939420316, guid: bbc5d8ecf8d3e264d873d3b0a92ec527, type: 2}
   gun: {fileID: 1774077977068040}
+--- !u!114 &114619436382989666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785324572622308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baaaaaff89b3e304cbbe37a010b1c3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!212 &212686850891855522
 SpriteRenderer:
   m_ObjectHideFlags: 1
