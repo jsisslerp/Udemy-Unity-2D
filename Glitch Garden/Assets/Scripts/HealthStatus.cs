@@ -16,13 +16,8 @@ public class HealthStatus : MonoBehaviour
             health = value;
             if (health <= 0)
             {
-                Die();
+                Destroy(gameObject);
             }
         }
-    }
-
-    private void Die()
-    {
-        Destroy(gameObject);
     }
 }

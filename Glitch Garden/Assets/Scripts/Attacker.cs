@@ -14,18 +14,4 @@ public class Attacker : MonoBehaviour {
     {
         currentSpeed = speed;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("attacker collision: " + name + " with " + collision.gameObject.name);
-        DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        if (damageDealer)
-        {
-            HealthStatus healthStatus = GetComponent<HealthStatus>();
-            if (healthStatus)
-            {
-                healthStatus.Health -= damageDealer.Damage;
-            }
-        }
-    }
 }

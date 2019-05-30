@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class Defender : MonoBehaviour {
+public class Damageable : MonoBehaviour
+{
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("defender collision!");
         DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
         if (damageDealer)
         {
@@ -11,6 +11,10 @@ public class Defender : MonoBehaviour {
             if (healthStatus)
             {
                 healthStatus.Health -= damageDealer.Damage;
+            }
+            else
+            {
+                Destroy(gameObject);
             }
         }
     }
