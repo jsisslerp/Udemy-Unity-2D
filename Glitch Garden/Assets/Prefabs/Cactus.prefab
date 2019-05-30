@@ -164,6 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  immunization: 0
+  onDestroyVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
+    type: 2}
 --- !u!212 &212686850891855522
 SpriteRenderer:
   m_ObjectHideFlags: 1

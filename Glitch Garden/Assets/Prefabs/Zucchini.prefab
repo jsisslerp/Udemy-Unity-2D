@@ -109,6 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  immunization: 0
+  onDestroyVFX: {fileID: 0}
 --- !u!114 &114730327622688890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb7ca591930f11419fe2acc305817ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
 --- !u!212 &212719532945058174
 SpriteRenderer:
   m_ObjectHideFlags: 1
