@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 60028303061594468}
   - component: {fileID: 50366698701180266}
   - component: {fileID: 114730327622688890}
+  - component: {fileID: 114177960797104276}
   m_Layer: 0
   m_Name: Zucchini
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974144939420316}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -97,6 +98,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: 0.07}
       - {x: -0.01, y: 0.26999998}
       - {x: -0.08, y: 0.28}
+--- !u!114 &114177960797104276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974144939420316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114730327622688890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb7ca591930f11419fe2acc305817ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
 --- !u!212 &212719532945058174
 SpriteRenderer:
   m_ObjectHideFlags: 1

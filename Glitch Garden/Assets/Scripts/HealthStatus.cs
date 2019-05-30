@@ -14,10 +14,6 @@ public class HealthStatus : MonoBehaviour
         set
         {
             health = value;
-            if (health <= 0)
-            {
-                Destroy(gameObject);
-            }
         }
     }
 }
