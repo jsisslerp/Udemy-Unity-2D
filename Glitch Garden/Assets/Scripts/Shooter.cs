@@ -18,6 +18,7 @@ public class Shooter : MonoBehaviour {
             }
         }
         animator = GetComponent<Animator>();
+        SetIsAttacking();
 	}
 
     public void Fire()
@@ -27,7 +28,12 @@ public class Shooter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (myLaneSpawner && myLaneSpawner.transform.childCount > 0)
+        SetIsAttacking();
+    }
+
+    private void SetIsAttacking()
+    {
+        if (myLaneSpawner && myLaneSpawner.Spawned.Count > 0)
         {
             animator.SetBool("IsAttacking", true);
         }
@@ -36,4 +42,5 @@ public class Shooter : MonoBehaviour {
             animator.SetBool("IsAttacking", false);
         }
     }
+
 }
