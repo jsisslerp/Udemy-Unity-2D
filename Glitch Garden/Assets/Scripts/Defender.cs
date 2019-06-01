@@ -24,4 +24,8 @@ public class Defender : MonoBehaviour
         FindObjectOfType<StarDisplay>().Stars += stars;
     }
 
+    private void OnDestroy()
+    {
+        DefenderSpawner.Occupied.Remove(transform.position);
+    }
 }

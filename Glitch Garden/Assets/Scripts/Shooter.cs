@@ -17,7 +17,6 @@ public class Shooter : MonoBehaviour {
                 break;
             }
         }
-
         animator = GetComponent<Animator>();
 	}
 
@@ -28,7 +27,7 @@ public class Shooter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (myLaneSpawner.transform.childCount > 0)
+        if (myLaneSpawner && myLaneSpawner.transform.childCount > 0)
         {
             animator.SetBool("IsAttacking", true);
         }

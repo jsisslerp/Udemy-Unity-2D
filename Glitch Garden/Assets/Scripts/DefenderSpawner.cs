@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DefenderSpawner : MonoBehaviour {
     private Defender defender;
     private StarDisplay starDisplay;
+    static private HashSet<Vector2> occupied = new HashSet<Vector2>();
 
     private void Start()
     {
@@ -25,6 +26,14 @@ public class DefenderSpawner : MonoBehaviour {
         }
     }
 
+    static public HashSet<Vector2> Occupied
+    {
+        get
+        {
+            return occupied;
+        }
+    }
+
     private void OnMouseDown()
     {
         if (defender)
@@ -41,8 +50,9 @@ public class DefenderSpawner : MonoBehaviour {
 
     private void SpawnDefender(Vector2 worldPos)
     {
-        if (starDisplay.Stars >= defender.Cost)
+        if (starDisplay.Stars >= defender.Cost && !occupied.Contains(worldPos))
         {
+            occupied.Add(worldPos);
             starDisplay.Stars -= defender.Cost;
             Instantiate(defender, worldPos, Quaternion.identity);
         }
