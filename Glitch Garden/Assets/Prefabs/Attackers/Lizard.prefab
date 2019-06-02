@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 114223028629993758}
   - component: {fileID: 114191632769116548}
   - component: {fileID: 50164580368656406}
-  - component: {fileID: 114940379993998570}
   - component: {fileID: 61256571721346210}
-  - component: {fileID: 114717429023328292}
+  - component: {fileID: 114523698395157832}
+  - component: {fileID: 114312758203314020}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1357999181703020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0.41, z: 0}
+  m_LocalPosition: {x: 5.596, y: 2.279, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.57848126, y: -0.2503134}
+  m_Offset: {x: -0.59573126, y: -0.2733131}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -90,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35823953, y: 0.73059607}
+  m_Size: {x: 0.92172813, y: 0.9835917}
   m_EdgeRadius: 0
 --- !u!95 &95063799492029376
 Animator:
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  onDestroyVFX: {fileID: 0}
 --- !u!114 &114223028629993758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,21 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cc257d853a2b54f8a9c7dcdc07e1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114717429023328292
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1357999181703020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  immunization: 0
-  onDestroyVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
-    type: 2}
---- !u!114 &114940379993998570
+--- !u!114 &114312758203314020
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,6 +146,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
+--- !u!114 &114523698395157832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357999181703020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c3fc071c667c348a589623eba8ee2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212399061746400704
 SpriteRenderer:
   m_ObjectHideFlags: 1

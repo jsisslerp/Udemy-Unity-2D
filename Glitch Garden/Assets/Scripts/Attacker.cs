@@ -5,6 +5,13 @@ using UnityEngine;
 public class Attacker : MonoBehaviour {
     private float currentSpeed = 1f;
     private AttackerSpawner spawner;
+    private GameObject currentTarget;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public AttackerSpawner Spawner
     {
@@ -35,6 +42,33 @@ public class Attacker : MonoBehaviour {
 
     private void OnDestroy()
     {
-        spawner.Spawned.Remove(this);
+        if (spawner)
+        {
+            spawner.Spawned.Remove(this);
+        }
+    }
+
+    public void Attack(GameObject target)
+    {
+        currentTarget = target;
+        animator.SetBool("IsAttacking", true);
+    }
+
+    public void StrikeCurrentTarget()
+    {
+        if (currentTarget)
+        {
+            HealthStatus healthStatus = currentTarget.GetComponent<HealthStatus>();
+            DamageDealer damageDealer = GetComponent<DamageDealer>();
+            if (healthStatus && damageDealer)
+            {
+                healthStatus.Health -= damageDealer.Damage;
+                if (healthStatus.Health <= 0)
+                {
+                    healthStatus.Destroy();
+                }
+            }
+        }
+        animator.SetBool("IsAttacking", false);
     }
 }

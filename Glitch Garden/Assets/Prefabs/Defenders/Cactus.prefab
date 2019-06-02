@@ -39,10 +39,8 @@ GameObject:
   - component: {fileID: 114497439992392758}
   - component: {fileID: 114619436382989666}
   - component: {fileID: 50842603598022610}
-  - component: {fileID: 70638300204191646}
-  - component: {fileID: 114979904824292842}
   - component: {fileID: 114539762949773828}
-  - component: {fileID: 114849185110544328}
+  - component: {fileID: 61330798728819242}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -57,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1785324572622308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 4.15, z: 0}
+  m_LocalPosition: {x: 2, y: 2, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4993635949263736}
@@ -97,8 +95,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &70638300204191646
-CapsuleCollider2D:
+--- !u!61 &61330798728819242
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -106,12 +104,22 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.034603238, y: -0.05716324}
-  m_Size: {x: 0.3273394, y: 0.74719524}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.256, y: 1.008}
+    newSize: {x: 0.09, y: 0.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!95 &95044206558630224
 Animator:
   serializedVersion: 3
@@ -141,7 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e3285b6856c114790f2cea7ce09a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1974144939420316, guid: bbc5d8ecf8d3e264d873d3b0a92ec527, type: 2}
+  projectile: {fileID: 114812756804507464, guid: bbc5d8ecf8d3e264d873d3b0a92ec527,
+    type: 2}
   gun: {fileID: 1774077977068040}
 --- !u!114 &114539762949773828
 MonoBehaviour:
@@ -167,30 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
---- !u!114 &114849185110544328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785324572622308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca42e2fa39e1fe4b9fa3de405998241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
---- !u!114 &114979904824292842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785324572622308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  immunization: 0
   onDestroyVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
     type: 2}
 --- !u!212 &212686850891855522

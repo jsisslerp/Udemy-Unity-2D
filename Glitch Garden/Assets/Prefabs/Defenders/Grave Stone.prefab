@@ -11,21 +11,6 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1785324572622308}
   m_IsPrefabAsset: 1
---- !u!1 &1774077977068040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4993635949263736}
-  m_Layer: 0
-  m_Name: Gun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1785324572622308
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,13 +21,12 @@ GameObject:
   - component: {fileID: 4719066363794612}
   - component: {fileID: 95044206558630224}
   - component: {fileID: 212686850891855522}
-  - component: {fileID: 114497439992392758}
   - component: {fileID: 114619436382989666}
   - component: {fileID: 50842603598022610}
   - component: {fileID: 114539762949773828}
-  - component: {fileID: 61726527973352262}
+  - component: {fileID: 61749681585570626}
   m_Layer: 0
-  m_Name: Gnome
+  m_Name: Grave Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,24 +39,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1785324572622308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 4, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4993635949263736}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4993635949263736
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1774077977068040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.27, y: -0.1, z: 0}
+  m_LocalPosition: {x: 3, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4719066363794612}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50842603598022610
@@ -95,7 +65,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61726527973352262
+--- !u!61 &61749681585570626
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,14 +74,14 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46285716, y: 0.85714287}
+    oldSize: {x: 0.615, y: 0.885}
     newSize: {x: 0.09, y: 0.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -129,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1785324572622308}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 758d8c7e94ad0c747847e23e837915dc, type: 2}
+  m_Controller: {fileID: 9100000, guid: b85ad2d16a0ed8b48b080e4f8aa0c4b0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,20 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114497439992392758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785324572622308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e3285b6856c114790f2cea7ce09a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 114578224965281910, guid: f104c274c2e256945b37eb265b795419,
-    type: 2}
-  gun: {fileID: 1774077977068040}
 --- !u!114 &114539762949773828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01104559c03754243b8a3a875f534a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 300
+  cost: 100
 --- !u!114 &114619436382989666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,7 +169,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300022, guid: ed7a2f687f00986488c40419be61e62e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4618f4ee1a2181343ab2a2ad8368b031, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

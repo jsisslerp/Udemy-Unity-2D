@@ -53,10 +53,8 @@ GameObject:
   - component: {fileID: 4011060239068594}
   - component: {fileID: 95274886942207440}
   - component: {fileID: 114726112585969458}
-  - component: {fileID: 114692282027119480}
   - component: {fileID: 114019218620767112}
   - component: {fileID: 50952725149350958}
-  - component: {fileID: 114703338046256238}
   - component: {fileID: 61799848939180536}
   m_Layer: 0
   m_Name: Trophy
@@ -168,7 +166,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011531115, y: 0.011531115}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -179,7 +177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4695654, y: 0.81550074}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!95 &95274886942207440
 Animator:
@@ -211,31 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
---- !u!114 &114692282027119480
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1649037406605828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e3285b6856c114790f2cea7ce09a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  gun: {fileID: 0}
---- !u!114 &114703338046256238
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1649037406605828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0193ec1d543e3174c987c850c910e1ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  immunization: 0
   onDestroyVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
     type: 2}
 --- !u!114 &114726112585969458
