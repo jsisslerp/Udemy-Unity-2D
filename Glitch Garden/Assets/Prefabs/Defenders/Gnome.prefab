@@ -164,6 +164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 300
+  isAttacking: 0
+  attackSpawner: {fileID: 0}
+  spawned: 0
 --- !u!114 &114619436382989666
 MonoBehaviour:
   m_ObjectHideFlags: 1
