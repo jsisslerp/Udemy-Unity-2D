@@ -29,7 +29,8 @@ public class Projectile : MonoBehaviour {
         DamageDealer damageDealer = GetComponent<DamageDealer>();
         HealthStatus healthStatus = collision.gameObject.GetComponent<HealthStatus>();
         Shooter shooter = collision.gameObject.GetComponent<Shooter>();
-        if (damageDealer && healthStatus && shooter != myShooter)
+        Attacker attacker = collision.gameObject.GetComponent<Attacker>();
+        if (damageDealer && healthStatus && shooter != myShooter && attacker)
         {
             healthStatus.Health -= damageDealer.Damage;
             if (healthStatus.Health <= 0)

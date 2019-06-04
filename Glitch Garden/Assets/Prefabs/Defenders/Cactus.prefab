@@ -164,9 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 100
-  isAttacking: 0
-  attackSpawner: {fileID: 0}
-  spawned: 0
 --- !u!114 &114619436382989666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baaaaaff89b3e304cbbe37a010b1c3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 700
   onDestroyVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
     type: 2}
 --- !u!212 &212686850891855522

@@ -6,7 +6,7 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour {
     [SerializeField] private float minSpawnDelay = 1f;
     [SerializeField] private float maxSpawnDelay = 5f;
-    [SerializeField] private Attacker attackerPrefab;
+    [SerializeField] private Attacker[] attackerPrefabs;
     private List<Attacker> spawned = new List<Attacker>();
 
     private bool spawn = true;
@@ -30,13 +30,9 @@ public class AttackerSpawner : MonoBehaviour {
 
     private void SpawnAttacker()
     {
-        Attacker attacker = Instantiate(attackerPrefab, transform.position, transform.rotation) as Attacker;
+        Attacker attacker = Instantiate(attackerPrefabs[UnityEngine.Random.Range(0, attackerPrefabs.Length)], 
+            transform.position, transform.rotation) as Attacker;
         attacker.Spawner = this;
         Spawned.Add(attacker);
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }

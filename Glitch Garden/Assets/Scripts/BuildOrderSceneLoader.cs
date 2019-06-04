@@ -27,6 +27,11 @@ public class BuildOrderSceneLoader : MonoBehaviour
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
 
+    public void LoadLoseScene()
+    {
+        SceneManager.LoadScene("Lose Screen");
+    }
+
     public void Quit()
     {
         Application.Quit();
