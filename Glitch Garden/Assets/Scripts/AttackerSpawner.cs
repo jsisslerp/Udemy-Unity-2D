@@ -9,8 +9,6 @@ public class AttackerSpawner : MonoBehaviour {
     [SerializeField] private Attacker[] attackerPrefabs;
     private List<Attacker> spawned = new List<Attacker>();
 
-    private bool spawn = true;
-
     public List<Attacker> Spawned
     {
         get
@@ -21,7 +19,8 @@ public class AttackerSpawner : MonoBehaviour {
 
     // Use this for initialization
     IEnumerator Start () {
-        while (spawn)
+        GameTimer gameTimer = FindObjectOfType<GameTimer>();
+        while (!gameTimer.TimeExpired)
         {
             yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay));
             SpawnAttacker();

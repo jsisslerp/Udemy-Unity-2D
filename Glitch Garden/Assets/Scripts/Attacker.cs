@@ -7,6 +7,12 @@ public class Attacker : MonoBehaviour {
     private AttackerSpawner spawner;
     private GameObject currentTarget;
     private Animator animator;
+    static private int numAttackers = 0;
+
+    private void Awake()
+    {
+        numAttackers++;
+    }
 
     private void Start()
     {
@@ -26,6 +32,14 @@ public class Attacker : MonoBehaviour {
         }
     }
 
+    public static int NumAttackers
+    {
+        get
+        {
+            return numAttackers;
+        }
+    }
+
     // Update is called once per frame
     void Update () {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
@@ -42,6 +56,7 @@ public class Attacker : MonoBehaviour {
         {
             spawner.Spawned.Remove(this);
         }
+        numAttackers--;
     }
 
     public void Attack(GameObject target)

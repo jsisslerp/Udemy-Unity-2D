@@ -18,7 +18,7 @@ public class BuildOrderSceneLoader : MonoBehaviour
         }
         else
         {
-            throw new Exception("LoadNextScene called from End cene!");
+            LoadStartScene();
         }
     }
 
